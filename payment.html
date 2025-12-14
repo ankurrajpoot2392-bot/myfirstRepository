@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paymaet Form </title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        h1 {color:rgb(212, 0, 255)}
+        p {color: rgba(165, 42, 42, 0.888);}
+        .background {background-color: darkolivegreen; align-items: center;}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="" method="get">
+        <h1 class="main_heading">Payment Form</h1>
+        <h2>Contact Information</h2>
+        <p> Name: <Input type="text" name="name"></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <P> Male: <input type="radio" name="gender" id="Male">
+                Female <input type="radio" name="gender" id="Female">
+                Other <input type="radio" name="gender" id="Other">
+        </P>
+    </fieldset>
+    <p> Address: <textarea name="Address" id="Address" cols="100" rows="6"></textarea> </p>
+    <p> Email:  <input type="email" name="email" id="email"></p>
+    <p> Pincode: <input type="number" name="pincode" id="pincode"></p>
+    <h2>Payment Information</h2>
+    <p> Card Type:
+        <select name="card type" id="card type">
+        <option value="">--Select a card type</option>
+        <option value="Visa"> Visa</option>
+        <option value="Rupay"> Rupay</option>
+        <option value="Master Card"> Master Card</option>
+    </select>
+    </p>
+    <p> Card Number:
+        <input type="Card number" name="card number" id="Number">
+    </p>
+    <p> Expiry Date:
+        <input type="date" name="date" id="date">
+        <p> CVV:
+         <input type="cvv" name="CVV" id="number">
+        </p>
+        <p><input type="submit" value="pay now"></p>
+    </p>
+    </form>
+</div>
+</body>
+</html>
